@@ -1,6 +1,6 @@
 # ProcessingHistoryPlot
 
-_Processing java classes inspired by armadillu's OpenFrameworks (C++) addon: [ofxHistoryPlot](https://github.com/armadillu/ofxHistoryPlot)._
+_[Processing](https://processing.org/) java classes inspired by armadillu's OpenFrameworks (C++) addon: [ofxHistoryPlot](https://github.com/armadillu/ofxHistoryPlot)._
 
 ## Example 
 
