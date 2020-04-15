@@ -1,6 +1,5 @@
 import processing.core.PApplet;
-import com.fusefactory.ProcessingHistoryPlot.ProcessingHistoryPlot;
-
+import it.fusefactory.processinghistoryplot;
 public class Example extends PApplet {
     public static void main(String[] args) {
         PApplet.main(new String[] { Example.class.getName() });
