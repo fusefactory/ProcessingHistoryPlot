@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-class ProcessingHistoryPlot {
+public class HistoryPlot {
     static int DEFAULT_WIDTH = 160;
     static int DEFAULT_HEIGHT = 160;
 
@@ -66,7 +66,7 @@ class ProcessingHistoryPlot {
 
     Rectangle prevRect;
 
-    public ProcessingHistoryPlot(PApplet applet, String varName, float maxHistory){
+    public HistoryPlot(PApplet applet, String varName, float maxHistory){
         this.applet = applet;
 
         this.gridMesh = new VboMesh(applet);

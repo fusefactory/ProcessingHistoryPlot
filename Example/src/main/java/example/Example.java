@@ -4,19 +4,20 @@
 package example;
 
 import processing.core.PApplet;
+import it.fusefactory.processing.historyplot.*;
 
 public class Example extends PApplet {
     public static void main(String[] args) {
         PApplet.main(new String[] { Example.class.getName() });
     }
 
-    private ProcessingHistoryPlot plot;
+    private HistoryPlot plot;
 
     public void settings(){
         size(700, 400);
     }
     public void setup() {
-        plot = new ProcessingHistoryPlot(this, "mouseY", 350);
+        plot = new HistoryPlot(this, "mouseY", 350);
 //        plot.setRange(0, height);
         plot.addHorizontalGuide(height / 2, color(255, 0, 0));
         plot.setColor(color(0, 255, 0));
