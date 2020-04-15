@@ -1,11 +1,9 @@
-package ExampleProcessingHistoryPlot;
-
 import ProcessingHistoryPlot.ProcessingHistoryPlot;
 import processing.core.PApplet;
 
-public class ExampleProcessingHistoryPlot extends PApplet {
+public class Example extends PApplet {
     public static void main(String[] args) {
-        PApplet.main(new String[] { ExampleProcessingHistoryPlot.class.getName() });
+        PApplet.main(new String[] { Example.class.getName() });
     }
 
     private ProcessingHistoryPlot plot;

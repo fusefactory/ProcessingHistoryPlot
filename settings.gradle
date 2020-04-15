@@ -1,3 +1,4 @@
 rootProject.name = 'ProcessingHistoryPlot'
 include 'example'
+include 'example'
 
