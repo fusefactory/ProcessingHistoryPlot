@@ -1,4 +1,4 @@
-package com.github.fusefactory.processinghistoryplot;
+package it.fusefactory.processing.historyplot;
 
 import processing.core.PApplet;
 import processing.core.PVector;

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.fusefactory</groupId>
   <artifactId>ProcessingHistoryPlot</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <inceptionYear>2020</inceptionYear>
   <licenses>
     <license>

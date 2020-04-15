@@ -1,4 +1,4 @@
-package com.github.fusefactory.processinghistoryplot;
+package it.fusefactory.processing.historyplot;
 
 import processing.core.PApplet;
 import processing.core.PVector;
@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProcessingHistoryPlot {
+class ProcessingHistoryPlot {
     static int DEFAULT_WIDTH = 160;
     static int DEFAULT_HEIGHT = 160;
 

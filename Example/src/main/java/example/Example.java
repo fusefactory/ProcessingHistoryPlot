@@ -3,7 +3,6 @@
  */
 package example;
 
-import it.fusefactory.processinghistoryplot.ProcessingHistoryPlot;
 import processing.core.PApplet;
 
 public class Example extends PApplet {
