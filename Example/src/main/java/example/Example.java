@@ -14,7 +14,7 @@ public class Example extends PApplet {
     private HistoryPlot plot;
 
     public void settings(){
-        size(700, 400);
+        size(700, 400, P3D);
     }
     public void setup() {
         plot = new HistoryPlot(this, "mouseY", 350);

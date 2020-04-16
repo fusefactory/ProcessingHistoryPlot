@@ -70,13 +70,13 @@ public class HistoryPlot {
         this.applet = applet;
 
         this.gridMesh = new VboMesh(applet);
-        this.gridMesh.setMode(MeshMode.Lines);
+        this.gridMesh.setMode(PApplet.LINES);
 
         this.plotMesh = new VboMesh(applet);
-        this.plotMesh.setMode(MeshMode.LinesStrip);
+        this.plotMesh.setMode(PApplet.LINE_STRIP);
 
         this.smoothPlotMesh = new VboMesh(applet);
-        this.smoothPlotMesh.setMode(MeshMode.LinesStrip);
+        this.smoothPlotMesh.setMode(PApplet.LINE_STRIP);
 
         this.varName = varName;
         this.MAX_HISTORY = (int) maxHistory;
@@ -165,13 +165,13 @@ public class HistoryPlot {
         plotNeedsRefresh = true;
     }
 
-    public void refillGridMesh(int x, int y , int w, int h){
+    public void refillGridMesh(float x, float y , float w, float h){
 
         gridMesh.getVertices().clear();
 
         int gridH = (int) gridUnit;
         double numLinesH =  Math.floor(h / gridH);
-        gridMesh.setMode(MeshMode.Lines);
+        gridMesh.setMode(PApplet.LINES);
         for(int i = 0; i < numLinesH; i++){
             gridMesh.getVertices().add(new PVector(x, y + gridH * i));
             gridMesh.getVertices().add(new PVector(x + w,  y + gridH * i));
@@ -196,13 +196,13 @@ public class HistoryPlot {
         }
     }
 
-    public void draw(int x, int y){
+    public void draw(float x, float y){
         this.draw(x, y, DEFAULT_WIDTH, DEFAULT_HEIGHT);
     }
 
-    public void draw(int x, int y, int w, int h){
+    public void draw(float x, float y, float w, float h){
         boolean needsMesh = false;
-        Rectangle r = new Rectangle(x, y, w, h);
+        Rectangle r = new Rectangle((int) x, (int) y, (int) w, (int) h);
 
         if ( r != prevRect  || plotNeedsRefresh){
             needsMesh = true;
@@ -306,7 +306,9 @@ public class HistoryPlot {
                 applet.translate(w, 0);
                 applet.scale(-1, 1);
             }
-            applet.scale((1.0f * w) / MAX_HISTORY, - yscale);
+
+            float scaleX = (1.0f * w) / (MAX_HISTORY * 1.0f);
+            applet.scale(scaleX, - yscale);
             applet.translate(0, -plotLow);
 
             plotMesh.draw();
