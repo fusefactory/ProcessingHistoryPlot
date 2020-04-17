@@ -7,3 +7,6 @@ _[Processing](https://processing.org/) java classes inspired by armadillu's Open
 ## Example
 
 A simple example can be found [here](/src/main/java/ExampleProcessingHistoryPlot/ExampleProcessingHistoryPlot.java).
+
+
+![ProcessingHistoryPlot screenshot](./images/screenshot1.png)
