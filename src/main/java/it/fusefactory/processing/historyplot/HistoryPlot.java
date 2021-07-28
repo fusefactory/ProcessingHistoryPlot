@@ -111,7 +111,7 @@ public class HistoryPlot {
         this.MAX_HISTORY = max;
     }
 
-    void reset(){
+    public void reset(){
         values.clear();
         smoothValues.clear();
         count = 0;
